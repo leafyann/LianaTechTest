@@ -1,0 +1,256 @@
+ body{
+    margin:0;
+
+} 
+
+/* header */
+
+.top-bar{
+    background-color: #4c8930;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-news{
+    color: #ffffff;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.top-intranet{
+    color: #ffffff;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.language-bar{
+    float: right;
+    margin-top: 6px;
+}
+
+.language-button{
+    width: 150px;
+}
+
+.btn-primary {
+    color: #212121;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #fff;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #fff;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #fff;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #fff;
+}
+
+/* logo & nav-bar */
+
+.nav-bar{
+    margin: 30px 0 30px 0;
+}
+
+.logo{
+    height: 50px;
+    margin-right: 30px;
+}
+
+.nav-text{
+    color: #999999;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #4c8930;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #4c8930;
+    background-color: #fff;
+    border-color: #4c8930;
+}
+
+.btn-default.focus, .btn-default:focus {
+    color: #4c8930;
+    background-color: #fff;
+    border-color: #4c8930;
+}
+
+.btn-default:hover {
+    color: #4c8930;
+    background-color: #fff;
+    border-color: #4c8930;
+}
+
+/* Jumbotron */
+
+.banner{
+    background-image: url(../img/4L7C5828.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    height: 500px;
+}
+
+.banner-overlay{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner-content{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.banner-text{
+    color: #fff;
+    font-size: 60px;
+    font-family: "Open Sans light";
+}
+
+.banner-button{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* 3 column image banners */
+
+.column3{
+    margin-top: 50px;
+}
+
+#sisallontuotantoa{
+    background-image: url(../img/sisallontuotantoa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    height: 222px;
+    width: 360px;
+
+}
+
+#markkinoinninautomaation-mvv{
+    background-image: url(../img/markkinoinninautomaation-mvv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 222px;
+    width: 360px;
+}
+
+#yini{
+    background-image: url(../img/yini.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 222px;
+    width: 360px;
+}
+
+.columnPicture{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+}
+
+.column-text{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.overall {
+    position: relative;
+}
+
+.inline{
+    display: inline-block;
+    margin-bottom: 70px;
+    margin-left: 10px;
+}
+
+.companyNumbers{
+    margin: 60px 120px 60px 120px;
+}
+
+.numbers{
+    font-size: 60px;
+}
+
+.numbers-description{
+    font-size: 20px;
+}
+
+.news-content{
+    margin: 30px;
+}
+
+/* Latest news */
+
+.latest-news{
+    background-color: #eceeef;
+    padding-bottom: 60px;
+    z-index: -1;
+}
+
+.font-header{
+    font-size: 30px;
+    font-family: OpenSans Semibold;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.news-card{
+    background-color: #fff;
+    border-radius: 0.5em;
+    border: 1px solid #e0e0e0;
+    height: 300px;
+}
+
+/* References */
+
+.references-card{
+    border-radius: 0.5em;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.references-borderbottom{
+
+    height: 120px;
+    margin: 30px 0 30px 0;
+}
+
+.references-text{
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 20px 10px 20px;
+}
