@@ -81,7 +81,8 @@
 }
 
 .logo{
-    height: 50px;
+    height: auto;
+    width: auto;
     margin-right: 30px;
 }
 
@@ -127,9 +128,18 @@
 
 .btn-default:hover {
     color: #4c8930;
-    background-color: #fff;
+    background-color: transparent;
     border-color: #4c8930;
     font-family: "Open Sans", sans-serif;
+}
+
+.logo-md{
+    width: 100px;
+}
+    /* con-sm */
+
+.logo-sm{
+    width: 50px;
 }
 
 /* Jumbotron */
@@ -167,6 +177,13 @@
     margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+}
+
+.jumbotron-button > .btn-default:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* 3 column image banners */
@@ -220,8 +237,64 @@
     font-weight: 600;
 }
 
+    /* col-md */
+#sisallontuotantoa-md{
+    background-image: url(../img/sisallontuotantoa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    height: 185px;
+    width: 300px;
+    text-align: center;
+
+}
+
+#markkinoinninautomaation-mvv-md{
+    background-image: url(../img/markkinoinninautomaation-mvv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 185px;
+    width: 300px;
+    text-align: center;
+}
+
+#yini-md{
+    background-image: url(../img/yini.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 185px;
+    width: 300px;
+    text-align: center;
+}
+
+    .columnPicture-md{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+}
+
+.column-text-md{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+/* Company in numbers */
+
 .overall {
     position: relative;
+}
+
+.overall > img{
+    max-width: 100%;
+    height: auto;
 }
 
 .inline{
@@ -246,11 +319,29 @@
     font-weight: 300;
 }
 
-.news-content{
-    margin: 30px;
+    /* col-md */
+.numPic-md{
+    width: 50px;
+}
+
+.numbers-md{
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.numbers-description-md{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+
 }
 
 /* Latest news */
+
+.news-content{
+    margin: 30px;
+}
 
 .latest-news{
     background-color: #eceeef;
@@ -314,6 +405,11 @@ p{
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+}
+
+.card > img{
+    width: 100%;
+    height: auto;
 }
 
 /* Subscribe to newsletter */
