@@ -102,7 +102,7 @@
 .nav-text{
     color: #999999;
     margin-left: 20px;
-    font-family: "Open Sans",  sans-serif;;
+    font-family: "Open Sans",  sans-serif;
 }
 
 .btn-default {
@@ -136,10 +136,18 @@
 .logo-md{
     width: 100px;
 }
-    /* con-sm */
+    /* col-sm */
 
 .logo-sm{
-    width: 50px;
+    width: 100px;
+    margin-left: 40px;
+}
+
+.nav-text-sm{
+    color: #999999;
+    margin-left: 6px;
+    font-size: 8px;
+    font-family: "Open Sans",  sans-serif;
 }
 
 /* Jumbotron */
@@ -286,6 +294,55 @@
     font-weight: 600;
 }
 
+    /* col-sm */
+#sisallontuotantoa-sm{
+    background-image: url(../img/sisallontuotantoa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    height: 129.5px;
+    width: 210px;
+    text-align: center;
+
+}
+
+#markkinoinninautomaation-mvv-sm{
+    background-image: url(../img/markkinoinninautomaation-mvv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 129.5px;
+    width: 210px;
+    text-align: center;
+}
+
+#yini-sm{
+    background-image: url(../img/yini.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 129.5px;
+    width: 210px;
+    text-align: center;
+}
+
+.columnPicture-sm{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+}
+
+.column-text-sm{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
 /* Company in numbers */
 
 .overall {
@@ -332,6 +389,25 @@
 
 .numbers-description-md{
     font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+
+}
+
+/* col-sm */
+.numPic-sm{
+    width: 30px;
+    margin-top: 50px;
+}
+
+.numbers-sm{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.numbers-description-sm{
+    font-size: 10px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
 
@@ -486,6 +562,17 @@ p{
     display: inline-block;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+}
+
+.footer-text-sm{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 16px;
+    text-align: right;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
 }
 
 .social-logo{
