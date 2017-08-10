@@ -1,6 +1,5 @@
  body{
     margin:0;
-
 } 
 
 /* header */
@@ -10,6 +9,7 @@
     height: 50px;
     position: relative;
     z-index: 1;
+    font-family: "Open Sans", sans-serif;
 }
 
 .top-news{
@@ -80,30 +80,35 @@
     color: #999999;
     display: inline-block;
     margin-left: 20px;
+    font-family: "Open Sans",  sans-serif;;
 }
 
 .btn-default {
     color: #fff;
     background-color: #4c8930;
     border-color: #4c8930;
+    font-family: "Open Sans",  sans-serif;
 }
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     color: #4c8930;
     background-color: #fff;
     border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-default.focus, .btn-default:focus {
     color: #4c8930;
     background-color: #fff;
     border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-default:hover {
     color: #4c8930;
     background-color: #fff;
     border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Jumbotron */
@@ -131,12 +136,16 @@
 .banner-text{
     color: #fff;
     font-size: 60px;
-    font-family: "Open Sans light";
+    font-family: "Open Sans",  sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .banner-button{
     font-size: 20px;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 /* 3 column image banners */
@@ -186,6 +195,8 @@
     color: #fff;
     text-align: center;
     margin-top: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 .overall {
@@ -204,10 +215,14 @@
 
 .numbers{
     font-size: 60px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 .numbers-description{
     font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 .news-content{
@@ -224,7 +239,8 @@
 
 .font-header{
     font-size: 30px;
-    font-family: OpenSans Semibold;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
     text-align: center;
     margin: 30px 0 30px 0;
 }
@@ -233,10 +249,27 @@
     background-color: #fff;
     border-radius: 0.5em;
     border: 1px solid #e0e0e0;
-    height: 300px;
+    height: 200px;
+}
+
+h6{
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 /* References */
+
+.references{
+   padding-bottom: 60px;
+   border-bottom: 1px solid #cccccc;
+}
 
 .references-card{
     border-radius: 0.5em;
@@ -253,4 +286,120 @@
 .references-text{
     border-top: 1px solid #e0e0e0;
     padding: 10px 20px 10px 20px;
+    height: 150px;
+}
+
+p{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* Subscribe to newsletter */
+
+.newsletter{
+    margin-bottom: 30px;
+}
+
+.subscribe-center{
+    text-align: center;
+    margin: 20px;
+}
+
+.email-inputBox{
+    width: 300px;
+    height: 32px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #4c8930;
+    border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success {
+    color: #4c8930;
+    background-color: transparent;
+    border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.btn-success:hover {
+    color: #4c8930;
+    background-color: transparent;
+    border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.btn-success.focus, .btn-success:focus {
+    color: #4c8930;
+    background-color: transparent;
+    border-color: #4c8930;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+/* footer */
+
+.footer{
+    background-color: #000000;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.contact-inline{
+    display: inline-block;
+}
+
+.contact-button{
+    vertical-align: middle;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.footer-text{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 16px;
+    text-align: right;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.social-logo{
+    text-align: right;
+    display: inline-block;
+    margin-top:50px;
+    margin-right: 10px;
+}
+
+.footer-line1{
+    text-align: right;
+}
+
+.footer-line2{
+    text-align: right;
+}
+
+h3{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+h4{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+h5{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
