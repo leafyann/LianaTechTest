@@ -157,6 +157,12 @@
   .sidenav a {font-size: 18px;}
 }
 
+.mobile-menu{
+    font-size:30px;
+    cursor:pointer;
+    color:#fff;
+}
+
 /* logo & nav-bar */
 
 .nav-bar{
@@ -243,11 +249,15 @@
 
 .banner{
     background-image: url(../img/4L7C5828.png);
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
     height: 500px;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
+
+
 
 .banner-overlay{
     background: rgba(33,33,33,0.5);
@@ -286,10 +296,14 @@
 /* jumbotron-mobile */
 .banner-xs{
     background-image: url(../img/4L7C5828.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
     height: 200px;
+    background-image: url(../img/4L7C5828.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 0;
 }
 
 .banner-text-xs{
