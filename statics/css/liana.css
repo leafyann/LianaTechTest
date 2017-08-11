@@ -1,5 +1,7 @@
  body{
-    margin:0;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden; 
 } 
 
 /* header */
@@ -73,6 +75,87 @@
     background-color: #4c8930;
     border-color: #fff;
 }
+/* top-bar-mobile */
+.menu-img{
+    margin: 16px;
+}
+
+.language-button{
+    text-align: left;
+    margin-right: 16px;
+}
+
+.language-bar-xs{
+    margin-top: 8px;
+    margin-left: 60px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 80px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4c8930;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 4px 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 /* logo & nav-bar */
 
@@ -82,7 +165,7 @@
 
 .logo{
     height: auto;
-    width: auto;
+
     margin-right: 30px;
 }
 
@@ -150,6 +233,12 @@
     font-family: "Open Sans",  sans-serif;
 }
 
+    /* logo-mobile */
+.logo-xs{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 /* Jumbotron */
 
 .banner{
@@ -194,6 +283,35 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* jumbotron-mobile */
+.banner-xs{
+    background-image: url(../img/4L7C5828.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    height: 200px;
+}
+
+.banner-text-xs{
+    color: #fff;
+    font-size: 20px;
+    font-family: "Open Sans",  sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.banner-overlay-xs{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner-content-xs{
+    text-align: center;
+    margin-top: 60px;
+}
+
 /* 3 column image banners */
 
 .column3{
@@ -233,7 +351,7 @@
     overflow: hidden;
     height: 100%;
     z-index: 2;
-    width: 100%;
+
 }
 
 .column-text{
@@ -282,7 +400,6 @@
     overflow: hidden;
     height: 100%;
     z-index: 2;
-    width: 100%;
 }
 
 .column-text-md{
@@ -331,7 +448,6 @@
     overflow: hidden;
     height: 100%;
     z-index: 2;
-    width: 100%;
 }
 
 .column-text-sm{
@@ -341,6 +457,63 @@
     margin-top: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+}
+
+/* mobile */
+#sisallontuotantoa-xs{
+    background-image: url(../img/sisallontuotantoa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 111px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#markkinoinninautomaation-mvv-xs{
+    background-image: url(../img/markkinoinninautomaation-mvv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+    height: 111px;
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#yini-xs{
+    background-image: url(../img/yini.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+
+    height: 111px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.columnPicture-xs{
+    background: rgba(33,33,33,0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.column-text-xs{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.mobile-column{
+    text-align: middle;
 }
 
 /* Company in numbers */
@@ -411,6 +584,35 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
 
+}
+
+/* mobile */
+.companyNumbers-xs{
+        margin: 10px 60px 10px 60px;
+        height: 200px;
+}
+
+.numPic-xs{
+    width: 30px;
+    margin-top: 50px;
+}
+
+.numbers-xs{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.numbers-description-xs{
+    font-size: 6px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.inline-xs{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 /* Latest news */
@@ -488,6 +690,25 @@ p{
     height: auto;
 }
 
+/* references-mobile */
+.references-text-xs{
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 20px 10px 20px;
+    height: 160px;
+}
+
+.card-title-xs{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.references-text-xs > .card-text-xs{
+    font-size: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
 /* Subscribe to newsletter */
 
 .newsletter{
@@ -534,6 +755,13 @@ p{
     border-color: #4c8930;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+}
+
+/* mobile */
+.emailbox-mobile{
+    border-color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 /* footer */
@@ -596,7 +824,7 @@ h3{
     font-weight: 600;
 }
 
-h4{
+.footer-h4{
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -621,4 +849,18 @@ h5{
 .footer-line1 > a:focus {
     color: #4c8930;
     text-decoration: none;
+}
+
+/* mobile footer */
+.contact-text-xs{
+    text-align: center;
+}
+
+.contact-button-xs{
+    margin-top: 20px;
+}
+
+.footer-line2-xs{
+    text-align: right;
+    margin-right: 20px;
 }

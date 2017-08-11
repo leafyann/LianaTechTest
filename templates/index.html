@@ -4,6 +4,7 @@
 <head>
     <title>Liana Technologies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../statics/css/liana.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -17,9 +18,8 @@
 
     <div class="top-bar">
 
-        <div class="row">
             <div class="container">
-                <div class="dropdown language-bar">
+                <div class="dropdown language-bar hidden-xs">
                     <button class="btn btn-primary dropdown-toggle language-button" type="button" data-toggle="dropdown">In English
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu">
@@ -27,12 +27,38 @@
                         <li><a href="#">Chinese</a></li>
                     </ul>
                 </div> <!-- /dropdown -->
-                <div class="topbar-links">
+                <div class="topbar-links hidden-xs">
                 <a href="#" class="top-intranet">Intranet</a>
                 <a href="#" class="top-news">News</a>
                 </div>
             </div><!-- container -->
-        </div><!-- /row -->
+
+        <!-- mobile -->
+            <div class="col-xs-6 hidden-md hidden-lg hidden-xl hidden-sm">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">News</a>
+                    <a href="#">Intranet</a>
+                    <a href="#">Company</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
+            </div>
+
+            <div class="col-xs-6 hidden-md hidden-lg hidden-xl hidden-sm">
+                <div class="dropdown language-bar-xs">
+                    <button class="btn btn-primary dropdown-toggle language-button-xs" type="button" data-toggle="dropdown">In English
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Suomi</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </div> <!-- /dropdown -->
+            </div>
+        <!-- /mobile -->
 
     </div><!-- /top-bar -->
 
@@ -91,9 +117,19 @@
             <div class="form-group col-sm-8 hidden-xs hidden-md hidden-lg hidden-xl">
             <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-default col-sm-4 hidden-md hidden-lg hidden-xl">Search</button>
+            <button type="submit" class="btn btn-default col-sm-4 hidden-xs hidden-md hidden-lg hidden-xl">Search</button>
         </div><!-- /col-sm-6 -->
         <!-- /col-sm -->
+
+        <!-- mobile -->
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl logo-xs">
+            <a href="#"><img src="../statics/img/lianalogo.png" alt="Liana Logo"></a>
+        </div>
+        <div class="form-group col-xs-8 hidden-sm hidden-md hidden-lg hidden-xl">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default col-xs-4 hidden-sm hidden-md hidden-lg hidden-xl">Search</button>
+        <!-- /mobile -->
 
 
         </div><!-- container -->
@@ -101,10 +137,23 @@
 
 <!-- Jumbotron -->
 
-    <div class="banner">
+    <div class="banner hidden-xs">
         <div class="banner-overlay">
             <div class="banner-content">
                 <div class="banner-text">Software fueling digital marketing</div>
+                    <div class="jumbotron-button">
+                        <button type="button" class="btn btn-default banner-button">Learn more</button>
+                    </div>
+                </div><!-- banner-text -->
+            </div>
+        </div><!-- banner-overlay -->
+        
+    </div>
+
+    <div class="banner-xs col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl">
+        <div class="banner-overlay-xs">
+            <div class="banner-content-xs">
+                <div class="banner-text-xs">Software fueling digital marketing</div>
                     <div class="jumbotron-button">
                         <button type="button" class="btn btn-default banner-button">Learn more</button>
                     </div>
@@ -191,6 +240,29 @@
             </div>
         </div>
         <!-- /col-sm -->
+        <!-- mobile -->
+        <div class="mobile-column col-xs-12 hidden-sm hidden-xl hidden-lg hidden-md">
+            <div id="sisallontuotantoa-xs">
+                <div class="columnPicture-xs">
+                    <div class="column-text-xs">Company</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-xl hidden-lg hidden-md">
+            <div id="markkinoinninautomaation-mvv-xs">
+                <div class="columnPicture-xs">
+                    <div class="column-text-xs">Products</div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-xl hidden-lg hidden-md">
+            <div id="yini-xs">
+            <div class="columnPicture-xs">
+                <div class="column-text-xs">Contact us</div>
+                </div>
+            </div>
+        </div>
+        <!-- /mobile -->
 
     </div><!-- column3 -->
 </div>
@@ -200,7 +272,7 @@
 <div class="container">
 
     <!-- col-xl col-lg -->
-    <div class="companyNumbers">
+    <div class="companyNumbers hidden-xs">
         <div class="col-xl-4 col-lg-4 hidden-xs hidden-sm hidden-md overall">
             <img src="../statics/img/Business.png" alt="business" class="inline">
             <div class="company-text inline">
@@ -226,7 +298,7 @@
     <!-- /col-xl col-lg -->
 
     <!-- col-md -->
-    <div class="companyNumbers">
+    <div class="companyNumbers hidden-xs">
         <div class="col-md-4 hidden-xl hidden-lg hidden-sm hidden-xs overall-md">
             <img src="../statics/img/Business.png" alt="business" class="inline numPic-md">
             <div class="company-text inline">
@@ -252,7 +324,7 @@
     <!-- /col-md -->
 
     <!-- col-sm -->
-    <div class="companyNumbers">
+    <div class="companyNumbers hidden-xs">
         <div class="col-sm-4 hidden-xl hidden-lg hidden-md hidden-xs overall-md">
             <img src="../statics/img/Business.png" alt="business" class="inline numPic-sm">
             <div class="company-text inline">
@@ -276,6 +348,43 @@
         </div>
     </div>
     <!-- /col-sm -->
+
+    <!-- mobile -->
+    <div class="companyNumbers-xs">
+        <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+            <img src="../statics/img/Business.png" alt="business" class="inline-xs numPic-xs">
+        </div>
+        <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+            <img src="../statics/img/Face.png" alt="face" class="inline-xs numPic-xs">
+
+        </div>
+        <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+            <img src="../statics/img/Public.png" alt="public" class="inline-xs numPic-xs">
+
+        </div>
+        <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+                 <div class="company-text">
+                    <div class="numbers-xs">3000</div>
+                     <div class="numbers-description-xs">Clients</div>
+                </div>
+        </div>
+         <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+                <div class="company-text">
+                    <div class="numbers-xs">180</div>
+                    <div class="numbers-description-xs">Employees</div>
+                </div>
+        </div>
+        <div class="col-xs-4 hidden-xl hidden-lg hidden-md hidden-sm overall-md">
+                <div class="company-text">
+                    <div class="numbers-xs">10000</div>
+                    <div class="numbers-description-xs">Daily users</div>
+                </div>
+         </div>
+
+    </div>
+
+
+    <!-- /mobile -->
 
 </div><!-- container -->
 
@@ -433,8 +542,63 @@
                     </div>
                 </div>
             </div><!-- /card-deck -->
-        </div><!-- /col-md-3 -->
+        </div><!-- /col-md-6 -->
         <!-- /col-sm -->
+
+         <!-- mobile-->
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="card-deck references-card">
+                <div class="card">
+                    <img class="card-img-top references-borderbottom" src="../statics/img/Layer1.png" alt="Bosch">
+                    <div class="card-block">
+                        <div class="references-text-xs">
+                            <span class="card-title-xs">Robert Bosch</span>
+                            <p class="card-text-xs">Bosch is a multinational engineering and electornics company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /card-deck -->
+        </div><!-- /col-xs-6 -->
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="card-deck references-card">
+                <div class="card">
+                    <img class="card-img-top references-borderbottom" src="../statics/img/Layer2.png" alt="The Body Shop">
+                    <div class="card-block">
+                        <div class="references-text-xs">
+                            <span class="card-title-xs">The Body Shop</span>
+                            <p class="card-text-xs">The Body Shop is a global beauty barnd and it has more than 3,000 stores in more than 60 countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /card-deck -->
+        </div><!-- /col-xs-6 -->
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="card-deck references-card">
+                <div class="card">
+                    <img class="card-img-top references-borderbottom" src="../statics/img/Layer3.png" alt="Lapland Hotels">
+                    <div class="card-block">
+                        <div class="references-text-xs">
+                            <span class="card-title-xs">Lapland Hotels</span>
+                            <p class="card-text-xs">Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /card-deck -->
+        </div><!-- /col-xs-6 -->
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="card-deck references-card">
+                <div class="card">
+                    <img class="card-img-top references-borderbottom" src="../statics/img/Layer4.png" alt="IKEA">
+                    <div class="card-block">
+                        <div class="references-text-xs">
+                            <span class="card-title-xs">IKEA</span>
+                            <p class="card-text-xs">IKEA is a multinational furniture store.</br></br></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /card-deck -->
+        </div><!-- /col-xs-6 -->
+        <!-- /mobile -->
 
     </div>
     </div>
@@ -451,10 +615,17 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        <div class="subscribe-center">
+        <div class="subscribe-center hidden-xs">
             <input type="email" class="email-inputBox"placeholder="    Your email address" />
             <button type="submit" class="btn btn-success">Subscribe</button>
         </div>
+
+        <!-- mobile -->
+        <div class="subscribe-center hidden-sm hidden-md hidden-lg hidden-xl">
+            <input type="email" class="email-inputBox emailbox-mobile col-xs-12"placeholder="Your email address" />
+            <button type="submit" class="btn btn-success col-xs-12">Subscribe</button>
+        </div>
+        <!-- /mobile -->
     </div>
 
 <!-- footer -->
@@ -464,7 +635,7 @@
             <div class="col-md-6 col-lg-6 col-xl-6 hidden-sm hidden-xs">
                 <h3>Liana Technologies</h3>
                 <div class="ContactUs-Text contact-inline">
-                    <h4>Sales and inquiries</h4>
+                    <span class="footer-h4">Sales and inquiries</span>
                     <h5>Email: sales@lianatech.com</h5>
                     <h5>Phone: +358 10 387 7053</h5>
                 </div>
@@ -489,10 +660,10 @@
             </div><!-- /col-md-6 -->
 
             <!-- col-sm -->
-            <div class="col-sm-6 col-lg-6 col-xl-6 hidden-md hidden-xs">
+            <div class="col-sm-6 hidden-xl hidden-lg hidden-md hidden-xs">
                 <h3>Liana Technologies</h3>
                 <div class="ContactUs-Text contact-inline">
-                    <h4>Sales and inquiries</h4>
+                    <span class="footer-h4">Sales and inquiries</span>
                     <h5>Email: sales@lianatech.com</h5>
                     <h5>Phone: +358 10 387 7053</h5>
                 </div>
@@ -501,7 +672,7 @@
                 </div>
             </div><!-- /col-md-6 -->
 
-            <div class="col-sm-6 hidden-md hidden-xs">
+            <div class="col-sm-6 hidden-xl hidden-lg hidden-md hidden-xs">
                 <div class="footer-line1">
                     <a href="#" class="footer-text-sm">Company</a>
                     <a href="#" class="footer-text-sm">Products</a>
@@ -517,8 +688,26 @@
             </div><!-- /col-md-6 -->
             <!-- /col-sm -->
 
-        </div>
-    </div>
+            <!-- mobile -->
+            <div class="col-xs-12 hidden-xl hidden-lg hidden-md hidden-sm">
+                <h3>Liana Technologies</h3>
+                <div class="ContactUs-text-xs">
+                    <span class="footer-h4">Sales and inquiries</span>
+                    <h5>Email: sales@lianatech.com</h5>
+                    <h5>Phone: +358 10 387 7053</h5>
+                </div>
+                <button type="button" class="btn btn-success contact-button-xs">Contact us</button>
+
+            </div><!-- /col-xs-12 -->
+            <div class="footer-line2-xs">
+                    <a href="#"><img src="../statics/img/facebook.png" class="social-logo-xs" /></a>
+                    <a href="#"><img src="../statics/img/twitter.png" class="social-logo-xs" /></a>
+                    <a href="#"><img src="../statics/img/linkedin.png" class="social-logo-xs" /></a>
+            </div>
+            <!-- /mobile -->
+
+        </div><!-- /container -->
+    </div><!-- /footer -->
 
 <script src="../statics/js/liana.js"></script>
 </body>
