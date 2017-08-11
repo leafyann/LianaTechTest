@@ -13,14 +13,6 @@ function closeNav() {
 }
 
 //Latest News section of the RSS feed
-// jQuery.getFeed({
-//    url     :  "http://www.lianatech.com/news/all-news.rss",
-//    success : function (feed) {
-//       console.log(feed.title);
-//       // renew news here
-//    }
-// });
-
 $.ajax({
   url      : "http://www.lianatech.com/news/all-news.rss",
   dataType : 'rss',

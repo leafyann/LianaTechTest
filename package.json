@@ -1,0 +1,24 @@
+{
+  "name": "lianatech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leafyann/LianaTechTest.git"
+  },
+  "author": "Qi Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leafyann/LianaTechTest/issues"
+  },
+  "homepage": "https://github.com/leafyann/LianaTechTest#readme",
+  "dependencies": {
+    "http-proxy": "^1.16.2",
+    "jquery": "^3.2.1"
+  }
+}
