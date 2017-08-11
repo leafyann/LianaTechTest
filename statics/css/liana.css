@@ -907,6 +907,14 @@ h5{
     text-align: center;
 }
 
+.modal-content > h2{
+    color: #4c8930;
+}
+
+.modal-content > h4{
+    color: #333;
+}
+
 /* The Close Button */
 .close {
     color: #aaaaaa;
