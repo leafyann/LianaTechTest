@@ -67,15 +67,29 @@ function checkEmail() {
 
     if (!filter.test(email.value)) {
         $(".validation-fail").html("Please enter a correct e-mail address.");
-        $(".validation-fail-m").html("Please enter a correct e-mail address.");
     email.focus;
     return false;
  }
     else{
         $(".validation-fail").html("");
-        $(".validation-fail-m").html("");
         modal.style.display = "block";
 }
+}
+
+function checkEmailM() {
+
+    var emailM = document.getElementById('putEmail-m');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(emailM.value)) {
+            $(".validation-fail-m").html("Please enter a correct e-mail address.");
+        emailM.focus;
+        return false;
+    }
+        else{
+            $(".validation-fail-m").html("");
+            modal.style.display = "block";
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
